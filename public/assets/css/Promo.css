@@ -1,0 +1,696 @@
+:root {
+    --Orange: rgb(255, 115, 0);
+    --RougeClair: rgba(255, 0, 0, 0.164);
+    --bleuCiel: rgb(235, 235, 238);
+    --VERT: rgb(0, 158, 132);
+    --VERTClair: rgba(124, 202, 189, 0.212);
+    --White: white;
+    --Noir: black;
+    --NoirClair: rgb(209, 209, 209);
+    --Rouge: rgb(161, 16, 245);
+    --NoirsClair: rgba(0, 0, 0, 0.63);
+    --NoirSuperClair: rgba(56, 56, 56, 0.055);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerProm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    justify-content: space-between;
+    gap: 15px;
+    height: 95%;
+    width: 98%;
+}
+
+.Ligne1 {
+    position: relative;
+    width: 96%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gauche1 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+.gerProm {
+    color: var(--Noir);
+    opacity: 0.8;
+    
+}
+
+.Promo {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--VERT);
+   
+}
+
+.droite1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--VERT);
+    color: white;
+    height: 70%;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+   
+}
+
+.droite1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.droite1:hover {
+    transform: scaleX(1.1) translateY(2px);
+    transition: ease-out 1s;
+}
+
+.L2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    width: 96%;
+    
+}
+
+.Cherche {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 96%;
+    height: 6%;
+    gap: 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.Cherche>div {
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 600;
+    display: flex;
+    height: 98%;
+    width: 100%;
+    
+}
+
+.search1 {
+    background-color: var(--White);
+    flex: 9;
+    height: 100%;
+    width: 100%;
+    /* border: solid 1px var(--Orange); */
+}
+
+.search1 form {
+    width: 100%;
+    height: 95%
+}
+
+.search1 input {
+    background-color: var(--White);
+    width: 100%;
+    height: 90%;
+    margin-top: -1px;
+    margin-left: -1px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+}
+
+.filtre1 {
+    background-color: var(--White);
+    flex: 2;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.v {
+    font-weight: lighter;
+}
+
+.Gril {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    background-color: var(--Orange);
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    color: var(--White);
+    
+}
+
+.Liste1 {
+    background-color: var(--White);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 10px 10px 10px 10px;
+    color: var(--Noir);
+}
+
+.listeProm {
+    position: relative;
+    width: 96%;
+    height: 60%;
+    display: flex;
+    gap: 61px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.L2 div {
+    background-color: var(--Orange);
+    width: 22%;
+    height: 95%;
+    border-radius:11px 1px 14px 8px;
+    padding: 10px;
+
+}
+
+.stat1,
+.stat2,
+.stat3,
+.stat4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--White);
+    
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    height: 80%;
+}
+
+.Cbold {
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.Ptext {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+}
+
+.icNite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.icNite i {
+    color: var(--Orange);
+    background-color: var(--White);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 48%;
+    width: 110%;
+}
+
+.cadreProm {
+    background-color: var(--White);
+    background-color: var(--White);
+    border-radius: 10px 10px 10px 10px;
+    width: 21%;
+    height: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px rgb(129, 119, 119);
+    border-end-end-radius: 20px;
+    box-shadow: 1px 4px 20px rgb(202, 192, 192);
+}
+
+.cadreProm a {
+    text-decoration: none;
+    color: var(--Noir);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 20%;
+    position: left;
+    width: 30%;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -65%;
+    border-radius: 25px 25px 25px 25px;
+    padding: auto;
+    background-color: transparent;
+    border: solid 1px var(--NoirClair);
+    gap: 3px;
+}
+
+.onOff {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 20%;
+    position: left;
+    width: 30%;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -65%;
+    border-radius: 25px 25px 25px 25px;
+    padding: auto;
+    background-color: transparent;
+    border: solid 1px var(--NoirClair);
+    gap: 3px;
+}
+
+.off {
+    flex: 2;
+    height: 70%;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 10px;
+    background-color: var(--RougeClair);
+    font-size: 10px;
+    color: var(--Rouge);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.on {
+    flex: 1;
+    height: 80%;
+    border-radius: 100%;
+    background-color: var(--VERTClair);
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.on img {
+    margin: auto;
+    width: 80%;
+    height: 60%;
+}
+
+.infProm {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PhotPro {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.PhotPro img {
+    border-radius: 100%;
+    width: 50%;
+    max-height: 45px;
+    margin: auto;
+}
+
+.infdate {
+    flex: 3;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.date1 {
+    color: var(--NoirsClair);
+}
+
+.infb {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nbAppr {
+    height: 15%;
+    width: 80%;
+    background-color: var(--NoirSuperClair);
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.nbAppr span {
+    margin-left: 10px;
+}
+
+.vDet {
+    flex: 1;
+    height: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+    color: var(--Orange);
+}
+
+.nbAppr i {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.trait {
+    height: 1%;
+    width: 100%;
+    background-color: var(--NoirClair);
+}
+
+.popbi {
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background: #fff;
+    border-radius: 10px;
+    width: 1500px;
+    height: 81vh;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.popup label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.popup input[type="text"],
+.popup input[type="date"],
+.popup input[type="file"],
+.popup input[type="search"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.popup .actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.popup .actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.popup .actions .cancel {
+    background-color: #ccc;
+    color: #333;
+}
+
+.popup .actions .submit {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.info-photo {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.datePopup {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.popuDd,
+.popuDf {
+    width: 100%;
+}
+
+.photdp {
+    width: 35%;
+    height: 130px;
+}
+
+.drop-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    padding-top: 35%;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+    color: #888;
+    background-color: #fafafa;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.drop-area:hover {
+    background-color: #f0f0f0;
+    border-color: #aaa;
+}
+
+.aj {
+    color: var(--Orange);
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.promotion-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promotion-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.promotion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.promotion-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.promotion-card:hover {
+    transform: translateY(-8px);
+}
+
+.promotion-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.promotion-info {
+    padding: 20px;
+}
+
+.promotion-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.promotion-info p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+.pagination {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 4%;
+    width: 5%;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 14px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: var(--Orange);
+    color: #fff;
+}
+
+.pagination a.active {
+    background-color: var(--Orange);
+    color: white;
+}
+
+.cadreProm.active {
+    border: 2px solid var(--VERT);
+}
+
+.cadreProm .off {
+    font-weight: bold;
+    color: var(--Rouge);
+}
+
+.cadreProm.active .off {
+    color: var(--White);
+    background-color: var(--VERT);
+}
+
+.popbi {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 15%;
+    top: 3%;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.popbi.active {
+    display: block;
+}
+
+
+/* Facultatif pour overlay (fond gris derrière le popup) */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.active {
+    display: block;
+}

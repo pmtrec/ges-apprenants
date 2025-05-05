@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin-top: 0%;
+    margin-left: 0%;
+    
+
+}
+body{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: 
+    hidden;
+}
+
+.cadre{
+    border: 1px solid #029390;
+    width: 460px;
+    height: 660px;
+    border-radius: 18px;
+    border-top: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 12px 1px #029390, 13px 0px 1px #ff7901;
+    
+
+    background-color: white;
+}
+.orange_digital_center{
+ color:#e0914e;
+
+ width: 100%px;
+ height: 45px;
+ display: flex;
+ font-size: 0.8rem;
+ align-items: end;
+ justify-content: center;
+ padding-right: 40px;
+}
+.logo_titre{
+    color: #53b1ab;
+ 
+    width: 100%px;
+    height: 22px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+.bienenue{
+    color: #5b5b5b;
+    width: 100%px;
+    height: 54px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.bienenue_odc{
+    color:#fd9338;
+    font-weight: bold;
+    width: 100%px;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.se_connecter{
+    color:black;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 2.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.formulaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+
+
+    width: 100%;
+}
+.formulaire_de_login{
+    width: 87%;
+    height: 200px;
+    
+
+}
+.mat,.mdp{
+    border: 1px solid rgb(187, 179, 179);
+    width: 100%;
+    height: 50px; 
+     border-radius: 3px;
+}
+.mot_de_passe_oublier{
+    text-align: end;
+    color: red;
+    text-decoration: none;
+}
+.mot_de_passe_oublier a{
+    text-align: end;
+    color: red;
+    text-decoration: none;
+}
+.btn{
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 95%;
+    height: 40px;
+    background-color: #ec6e00;
+    border-radius: 6px;
+    box-shadow: 1px 2px 1px orange;
+    border: 1px solid transparent;
+    margin-top: 30px;
+}
+.alert{
+    color: red;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+}
+.alert {
+    color: red;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+    transform: scale(1.2); /* effet zoom */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Pour que l'effet ne s'applique que lors du changement */
+.mat, .mdp {
+    transition: transform 0.3s ease;
+}
+
+.mat.alert, .mdp.alert {
+    transform: scale(1.5);
+}
